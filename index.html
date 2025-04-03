@@ -11,30 +11,34 @@
             font-family: 'Anime Ace', sans-serif;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(135deg, #ff69b4, #8a2be2); /* Pink to purple gradient */
+            background: linear-gradient(135deg, #FFFFFF, #FFC1CC, #98FF98, #ADD8E6, #FFA500, #8A2BE2, #8B4513); /* Nature colors: White, Pink, Green, Light Blue, Orange, Purple, Brown */
             overflow-x: hidden;
             animation: bgGlow 10s infinite alternate;
         }
         @keyframes bgGlow {
-            0% { background: #ff69b4; }
-            100% { background: #8a2be2; }
+            0% { background: #FFFFFF; }
+            25% { background: #FFC1CC; }
+            50% { background: #98FF98; }
+            75% { background: #ADD8E6; }
+            100% { background: #FFA500; }
         }
         .section {
             background: rgba(255, 255, 255, 0.9);
-            padding: 25px;
+            padding: 20px;
             margin: 20px auto;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
             position: relative;
-            overflow: hidden;
+            overflow: auto; /* Ensure content scrolls if overflow */
+            max-width: 90%; /* Responsive width */
             transition: transform 0.3s;
         }
         .section:hover {
             transform: scale(1.05);
         }
         h1, h2 {
-            color: #ff69b4;
-            text-shadow: 2px 2px 4px #8a2be2;
+            color: #98FF98; /* Green for nature */
+            text-shadow: 2px 2px 4px #8B4513; /* Brown shadow */
             font-family: 'Lobster', cursive;
         }
         h1 {
@@ -47,38 +51,39 @@
             50% { transform: translateY(-10px); }
         }
         .title-section {
-            background: linear-gradient(45deg, #ff69b4, #ff1493);
-            color: white;
+            background: linear-gradient(45deg, #FFC1CC, #FFA500); /* Pink to Orange */
+            color: #FFFFFF; /* White text */
             padding: 20px;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 0 15px #ff1493;
+            box-shadow: 0 0 15px #8B4513; /* Brown shadow */
+            position: relative;
         }
         .highlight-madhu {
-            color: #FFFF00; /* Yellow color */
+            color: #FFA500; /* Orange for Madhu */
             font-size: 1.5em;
-            font-family: 'Lobster', cursive; /* Cool font */
-            text-transform: uppercase; /* Capital letters */
-            text-decoration: underline wavy #8a2be2;
+            font-family: 'Lobster', cursive;
+            text-transform: uppercase;
+            text-decoration: underline wavy #8B4513; /* Brown underline */
             animation: glow 2s infinite alternate;
         }
         @keyframes glow {
-            from { text-shadow: 0 0 5px #ff69b4; }
-            to { text-shadow: 0 0 10px #FFFF00, 0 0 20px #8a2be2; }
+            from { text-shadow: 0 0 5px #FFC1CC; }
+            to { text-shadow: 0 0 10px #FFA500, 0 0 20px #8B4513; }
         }
         canvas {
-            max-width: 600px;
+            max-width: 100%;
             margin: 20px auto;
-            border: 2px solid #ff69b4;
+            border: 2px solid #98FF98; /* Green border */
             border-radius: 10px;
-            box-shadow: 0 0 10px #8a2be2;
+            box-shadow: 0 0 10px #8A2BE2; /* Purple shadow */
         }
         .anime-character {
             position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 150px;
-            opacity: 0.7;
+            top: 10px; /* Adjusted from -50px */
+            right: 10px; /* Adjusted from -50px */
+            width: 120px; /* Reduced size for better fit */
+            opacity: 0.8;
             animation: float 6s infinite;
         }
         @keyframes float {
@@ -91,7 +96,7 @@
             height: auto;
             border-radius: 10px;
             margin: 10px 0;
-            box-shadow: 0 0 10px #ff69b4;
+            box-shadow: 0 0 10px #ADD8E6; /* Light blue shadow */
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -144,14 +149,14 @@
                 datasets: [{
                     label: 'Demand (tons)',
                     data: [500, 550, 600, 650, 725, 800],
-                    backgroundColor: '#ff69b4',
-                    borderColor: '#8a2be2',
+                    backgroundColor: '#98FF98', /* Green */
+                    borderColor: '#8B4513', /* Brown */
                     borderWidth: 2
                 }]
             },
             options: {
                 scales: { y: { beginAtZero: true } },
-                plugins: { title: { display: true, text: 'Urban Honey Demand (2020-2025)', color: '#ff1493' } }
+                plugins: { title: { display: true, text: 'Urban Honey Demand (2020-2025)', color: '#ADD8E6' /* Light Blue */ } }
             }
         });
 
@@ -162,11 +167,11 @@
                 labels: ['Honey Sales', 'Pollination Services', 'Beeswax Products'],
                 datasets: [{
                     data: [70, 20, 10],
-                    backgroundColor: ['#ff69b4', '#ff1493', '#8a2be2']
+                    backgroundColor: ['#FFC1CC', '#98FF98', '#FFA500'] /* Pink, Green, Orange */
                 }]
             },
             options: {
-                plugins: { title: { display: true, text: 'Revenue Streams', color: '#ff1493' } }
+                plugins: { title: { display: true, text: 'Revenue Streams', color: '#8A2BE2' /* Purple */ } }
             }
         });
 
@@ -178,15 +183,15 @@
                 datasets: [{
                     label: 'Yield (kg)',
                     data: [10, 25, 20, 15],
-                    borderColor: '#ff1493',
-                    backgroundColor: 'rgba(255, 105, 180, 0.2)',
+                    borderColor: '#8A2BE2', /* Purple */
+                    backgroundColor: 'rgba(255, 193, 204, 0.2)', /* Light Pink */
                     borderWidth: 3,
                     fill: true
                 }]
             },
             options: {
                 scales: { y: { beginAtZero: true } },
-                plugins: { title: { display: true, text: 'Seasonal Honey Yield', color: '#ff1493' } }
+                plugins: { title: { display: true, text: 'Seasonal Honey Yield', color: '#8B4513' /* Brown */ } }
             }
         });
     </script>
