@@ -3,56 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Beekeeping Portfolio - Madhu</title>
+    <title>Madhu's Epic Beekeeping Portfolio 2025</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Comic Sans MS', 'Anime Ace', sans-serif; /* Anime vibe */
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff69b4, #8a2be2); /* Pink to purple gradient */
+            overflow-x: hidden;
+            animation: bgGlow 10s infinite alternate;
+        }
+        @keyframes bgGlow {
+            0% { background: #ff69b4; }
+            100% { background: #8a2be2; }
         }
         .section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.05);
         }
         h1, h2 {
-            color: #2c3e50;
+            color: #ff69b4;
+            text-shadow: 2px 2px 4px #8a2be2;
+            font-family: 'Anime Ace', cursive;
         }
-        canvas {
-            max-width: 500px;
-            margin: 20px auto;
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
         .title-section {
-            text-align: center;
-            background: #3498db;
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
             color: white;
-            padding: 10px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 15px #ff1493;
+        }
+        .highlight-madhu {
+            color: #ff1493;
+            font-size: 1.5em;
+            text-decoration: underline wavy #8a2be2;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #ff69b4; }
+            to { text-shadow: 0 0 10px #ff1493, 0 0 20px #8a2be2; }
+        }
+        canvas {
+            max-width: 600px;
+            margin: 20px auto;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #8a2be2;
+        }
+        .anime-character {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            opacity: 0.7;
+            animation: float 6s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        .agri-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px #ff69b4;
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="section title-section">
-        <h1>Smart Beekeeping Portfolio</h1>
-        <p>Agribusiness Assignment by Madhu</p>
+        <h1>Madhu's Epic Beekeeping Portfolio 2025</h1>
+        <p>Agribusiness Masterpiece by <span class="highlight-madhu">Madhu</span></p>
         <p>Submitted on: April 03, 2025</p>
+        <img src="https://via.placeholder.com/150?text=Anime+Girl" alt="Anime Character" class="anime-character">
     </div>
 
     <div class="section">
         <h2>Introduction</h2>
-        <p>Smart Beekeeping ek innovative agribusiness hai jo urban rooftops pe IoT-based beehives se honey production aur pollination services deta hai. Yeh eco-friendly aur profitable hai.</p>
+        <p>Step into the futuristic world of <strong>Smart Beekeeping</strong>! This anime-inspired agribusiness uses IoT-powered beehives on urban rooftops to produce honey and boost pollination. Designed by <span class="highlight-madhu">Madhu</span>, it’s eco-friendly, profitable, and out-of-this-world!</p>
+        <img src="https://via.placeholder.com/300x200?text=Agriculture+Scene" alt="Agriculture Image" class="agri-img">
     </div>
 
     <div class="section">
         <h2>Market Analysis</h2>
-        <p>Target: Urban consumers aur cafes. Demand: Global honey market 2025 tak $11 billion tak jayega. India mein 15% CAGR se growth.</p>
+        <p>Target: Trendy urbanites and cafes! The global honey market is set to hit $11 billion by 2025, with India growing at a 15% CAGR. <span class="highlight-madhu">Madhu</span>’s vision leads the charge!</p>
+        <img src="https://via.placeholder.com/300x200?text=Agriculture+Market" alt="Market Image" class="agri-img">
     </div>
 
     <div class="section">
         <h2>Business Model</h2>
-        <p>Setup: 10 hives @ ₹20,000 = ₹2,00,000 investment. Revenue: ₹1,10,000/year (Honey: ₹77,000, Pollination: ₹22,000, Beeswax: ₹11,000).</p>
+        <p>Setup: 10 high-tech hives @ ₹20,000 = ₹2,00,000 investment. Revenue: ₹1,10,000/year (Honey: ₹77,000, Pollination: ₹22,000, Beeswax: ₹11,000). <span class="highlight-madhu">Madhu</span>’s genius at work!</p>
+        <img src="https://via.placeholder.com/300x200?text=Beekeeping+Setup" alt="Beekeeping Image" class="agri-img">
     </div>
 
     <div class="section">
@@ -64,7 +127,8 @@
 
     <div class="section">
         <h2>Conclusion</h2>
-        <p>Smart Beekeeping sustainable hai, local farming ko boost karta hai, aur future mein scalable hai.</p>
+        <p><span class="highlight-madhu">Madhu</span>’s Smart Beekeeping is a game-changer! It’s sustainable, boosts local farming, and scales to new heights in 2025. Watch this anime-inspired empire grow!</p>
+        <img src="https://via.placeholder.com/300x200?text=Future+Farming" alt="Future Farming Image" class="agri-img">
     </div>
 
     <script>
@@ -76,12 +140,14 @@
                 datasets: [{
                     label: 'Demand (tons)',
                     data: [500, 550, 600, 650, 725, 800],
-                    backgroundColor: '#27ae60'
+                    backgroundColor: '#ff69b4',
+                    borderColor: '#8a2be2',
+                    borderWidth: 2
                 }]
             },
             options: {
                 scales: { y: { beginAtZero: true } },
-                plugins: { title: { display: true, text: 'Urban Honey Demand (2020-2025)' } }
+                plugins: { title: { display: true, text: 'Urban Honey Demand (2020-2025)', color: '#ff1493' } }
             }
         });
 
@@ -92,11 +158,11 @@
                 labels: ['Honey Sales', 'Pollination Services', 'Beeswax Products'],
                 datasets: [{
                     data: [70, 20, 10],
-                    backgroundColor: ['#f1c40f', '#3498db', '#7f8c8d']
+                    backgroundColor: ['#ff69b4', '#ff1493', '#8a2be2']
                 }]
             },
             options: {
-                plugins: { title: { display: true, text: 'Revenue Streams' } }
+                plugins: { title: { display: true, text: 'Revenue Streams', color: '#ff1493' } }
             }
         });
 
@@ -108,13 +174,15 @@
                 datasets: [{
                     label: 'Yield (kg)',
                     data: [10, 25, 20, 15],
-                    borderColor: '#e74c3c',
-                    fill: false
+                    borderColor: '#ff1493',
+                    backgroundColor: 'rgba(255, 105, 180, 0.2)',
+                    borderWidth: 3,
+                    fill: true
                 }]
             },
             options: {
                 scales: { y: { beginAtZero: true } },
-                plugins: { title: { display: true, text: 'Seasonal Honey Yield' } }
+                plugins: { title: { display: true, text: 'Seasonal Honey Yield', color: '#ff1493' } }
             }
         });
     </script>
