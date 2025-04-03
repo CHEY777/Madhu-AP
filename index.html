@@ -40,6 +40,8 @@
             color: #98FF98; /* Green for nature */
             text-shadow: 2px 2px 4px #8B4513; /* Brown shadow */
             font-family: 'Lobster', cursive;
+            position: relative; /* Ensure heading stays on top */
+            z-index: 1; /* Above the image */
         }
         h1 {
             font-size: 2.5em;
@@ -58,6 +60,7 @@
             text-align: center;
             box-shadow: 0 0 15px #8B4513; /* Brown shadow */
             position: relative;
+            overflow: visible; /* Allow image to extend outside if needed */
         }
         .highlight-madhu {
             color: #FFA500; /* Orange for Madhu */
@@ -80,11 +83,12 @@
         }
         .anime-character {
             position: absolute;
-            top: 10px; /* Adjusted from -50px */
-            right: 10px; /* Adjusted from -50px */
+            top: 10px; /* Adjusted position */
+            right: 10px; /* Adjusted position */
             width: 120px; /* Reduced size for better fit */
             opacity: 0.8;
             animation: float 6s infinite;
+            z-index: 0; /* Below the heading */
         }
         @keyframes float {
             0% { transform: translateY(0); }
